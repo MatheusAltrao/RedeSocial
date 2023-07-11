@@ -1,0 +1,38 @@
+.wrapper {
+  max-width: 70rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  display: grid;
+  grid-template-columns: 16rem 1fr;
+  gap: 2rem;
+  align-items: flex-start;
+
+}
+
+.buttonTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--green-500);
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 50%;
+  border: 0;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width:788px) {
+
+  html {
+    font-size: 87.5%;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
